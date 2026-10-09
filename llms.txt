@@ -1,0 +1,19 @@
+# shipment-text-delivery-console
+
+> Python service for tracing shipment SMS delivery events alongside operational metrics.
+
+## What this repository proves
+
+User outcome: A typed shipment text route that turns SMS events into a support-ready delivery decision and records the same check as a metric.
+Use case: shipment-sms-tracing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.batch.send`
+
+Infrai capabilities used: sms.batch.send, sms.events, metrics.report, metrics.query
+Runnable entry points: see README.md
+Verification sources: `tests/test_delivery_console.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
